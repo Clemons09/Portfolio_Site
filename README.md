@@ -4,6 +4,7 @@ My personal website to showcase my projects and abilities. Visit www.codylemons.
  1) HTML
  2) CSS
  3) jQuery
+ 4) PHP (for Contact Form)
  
  Later Updates Will Include:
  1) JavaScript components
