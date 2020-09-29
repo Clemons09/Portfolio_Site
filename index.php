@@ -54,11 +54,8 @@
 </ul>
 </div>
   <div class="about">
-    <img src="images/bgcodybw.jpg" style="max-width:50%;max-height:50%;height:auto;"/>
-      <article class="myinfo">My name is Cody Lemons. I graduated from the University
-         of Mississippi in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <strong>Bloc.io</strong>. I learned a ton about the world of Web Development
-         and now spend my time building websites and experimenting with code. I hope this website displays the things I've learned through my adventures in coding and, if you're a writer or programmer like me, I'd love to hear from you. So please send me a message or find me on Twitter and Github.
-         Maybe we can even work together!
+    <img src="images/bgcodybw.jpg" height="400" width="325"/>
+      <article class="myinfo">I graduated from the <strong>University of Mississippi</strong> in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <strong>Bloc.io</strong>. Now, I spend my time building websites and experimenting with code. If you're a writer or programmer like me, I'd love to hear from you. So please send me a message or find me on Twitter and Github.
        </article>
     </div>
     <div id="links">
@@ -76,9 +73,8 @@
     </div>
   </div>
     <div class="writingsamples">
-      <ul>
-      <li><a href="http://www.codylemons.com/writingsamples" target="_blank">Writing Samples<img src="images/pen.jpg" height="120px" width="150px"/></a></li>
-    </ul>
+      <h3>Writing Samples</h3>
+      <a href="http://www.codylemons.com/writingsamples" target="_blank"><img src="images/pen.jpg" width="238" height="125"></a>
     </div>
   </div>
   <div class="container">
