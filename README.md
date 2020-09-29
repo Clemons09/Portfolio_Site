@@ -9,3 +9,6 @@ My personal website to showcase my projects and abilities. Visit www.codylemons.
  Later Updates Will Include:
  1) JavaScript components
  2) Java projects
+ 3) Form validation (PHP)
+ 4) Animations
+ 5) Cleaner Layout
