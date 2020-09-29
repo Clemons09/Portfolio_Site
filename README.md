@@ -1,5 +1,5 @@
 # Portfolio_Site
-My personal website to showcase my projects and abilities. Visit www.codylemons.com (Wordpress) while I work on this.
+My personal website to showcase my projects and abilities. URL(http://www.codylemonsdev.com)
  Languages I used:
  1) HTML
  2) CSS
