@@ -8,7 +8,7 @@ html {
 .lemons {
   display: block;
   position: absolute;
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   opacity: 0.1;
   z-index: 0;
@@ -52,7 +52,7 @@ html {
 }
 
 p#lang-head {
-  max-width: 100%;
+  max-width: 55%;
   height: auto;
   padding: 8px;
   border-top: 2px groove #c24a56;
@@ -128,7 +128,8 @@ div.about {
   margin: auto;
   max-width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
+  float: left;
   display: block;
   padding: 20px;
   border-right: 2px groove #c24a56;
@@ -139,17 +140,21 @@ div.about {
 }
 
 .about img {
+  right: 20px;
   opacity: 0.8;
   width: auto;
   padding: 5px;
   position: relative;
+  border-radius: 1em 1em 1em 1em;
 }
 
 .myinfo {
+  max-width: 45%;
+  text-align: left;
   font-family: "Rockwell", serif;
   color: #59191d;
   font-size: 13px;
-  padding: 10px;
+  padding: 5px;
   display: block;
 }
 
@@ -157,7 +162,7 @@ div#links {
   background-color: #9e9194;
   background: linear-gradient(white, #9e9194);
   float: left;
-  top: 1388px;
+  top: 1488px;
   max-width: 100%
   height: auto;
   position: absolute;
@@ -197,7 +202,7 @@ div#links a {
 .writingsamples {
   border-bottom: 5px ridge red;
   border-bottom-left-radius: 2em;
-  top: 1110px;
+  top: 1250px;
   display: block;
   position: absolute;
   float: left;

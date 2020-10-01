@@ -54,7 +54,7 @@
 </ul>
 </div>
   <div class="about">
-    <img src="images/bgcodybw.jpg" height="400" width="325"/>
+    <img src="images/bgcodybw.jpg" height="400" width="310"/>
       <article class="myinfo">I graduated from the <strong>University of Mississippi</strong> in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <strong>Bloc.io</strong>. Now, I spend my time building websites and experimenting with code. If you're a writer or programmer like me, I'd love to hear from you. So please send me a message or find me on Twitter and Github.
        </article>
     </div>
