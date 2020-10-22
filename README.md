@@ -8,6 +8,6 @@ My personal website to showcase my projects and abilities. URL(http://www.codyle
  5) Javascript
  
  Later Updates Will Include:
- 2) Java projects
- 3) Form validation (PHP)
- 4) Animations
+ 1) Java projects
+ 2) Form validation (PHP)
+ 3) Animations
