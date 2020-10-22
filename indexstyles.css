@@ -1,301 +1,299 @@
-
-html {
-  height: auto;
-  width: auto;
-  margin: auto;
+* {
+  box-sizing: border-box;
 }
 
-.lemons {
-  display: block;
-  position: absolute;
-  max-width: 95%;
-  height: auto;
-  opacity: 0.1;
-  z-index: 0;
+html {
+  margin: auto;
+  background-color: #f7f7e9;
 }
 
 .pagetop {
-  background: linear-gradient(#367842, #fcfcf7);
-  border-top: 2px groove #c24a56;
-  max-width: 100%;
-  height: auto;
+
 }
 
 .pagetop h1 {
-  padding: 5px;
-  font-family: "Helvetica", sans-serif;
-  font-size: 280%;
-  text-align: justify;
-  text-decoration: underline;
-  margin: 10px;
+    font-size: 42px;
+    font-family: "Helvetica", "Courier", sans-serif;
 }
 
-.pagetop h4 {
-  margin: 20px;
-  font-family: sans-serif;
-}
-
-.pagetop img {
-  width: 100%;
+.diff-font {
+  padding: 2px;
 }
 
 .email-font {
-  padding-left: 30px;
-  max-width: 100%;
-  height: auto;
   font-style: italic;
-  text-align: left;
+  padding: 2px;
 }
 
-.email-font:hover {
-  cursor: auto;
-}
-
-p#lang-head {
-  max-width: 55%;
-  height: auto;
-  padding: 8px;
-  border-top: 2px groove #c24a56;
-  border-left: 1px ridge #c24a56;
-  border-radius: 1em 1em;
-  font-family: "Rockwell", sans-serif;
-  font-size: 90%;
-  text-align: left;
-}
-
-.sidebar-list {
-  right: 25px;
-  font-family: "Rockwell", sans-serif;
-  font-size: 75%;
-  margin: auto;
-  height: auto;
-  position: relative;
-}
-
-.sidebar-list li {
+#social {
+  max-width: 100%;
+  padding: 10px;
+  list-style-type: none;
   display: inline-flex;
-  color: #c24a56;
-  padding: 7px;
-}
-
-.sidebar-list img {
-  padding-right: 5px;
-}
-
-div.socialmedia {
-  height: 25px;
-  margin-bottom: 15px;
-}
-
-.socialmedia ul li {
-  position: relative;
-  display: inline-table;
 }
 
 .fa {
-  max-width: 100%;
-  height: auto;
-  border-style: solid;
-  border-color: #c24a56;
-  padding: 5px;
-  opacity: 0.6;
-  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 50px;
 }
 
 .fa:hover {
-  opacity: 0.9;
+  background-color: #f1faeb;
+  cursor: pointer;
 }
 
 .fa-twitter {
-  margin-right: 10px;
-  background: white;
-  color: #3e8cb3;
+  color: #6db6f2;
 }
 
 .fa-github {
-  margin-left: 10px;
-  padding: 5px;
   color: black;
 }
 
-.fa-book{
-  color: #b30e0e;
-  background-color: white;
-  margin-left: 20px;
+.fa-book {
+  color: #ba2236;
 }
 
-div.about {
-  margin: auto;
+#about {
+  position: relative;
+}
+
+#about img {
   max-width: 100%;
   height: auto;
-  position: relative;
-  float: left;
+  border-radius: 4px;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#panel, #dropdown-content {
+  margin: 12px;
+  background-color: #52b023;
+  border: 1px solid #52b023;
+  text-align: center;
   display: block;
-  padding: 20px;
-  border-right: 2px groove #c24a56;
-  border-bottom: 8px groove #c24a56;
-  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
-  background-color: #367842;
-  background: linear-gradient(#fcfcf7, #367842);
-}
-
-.about img {
-  right: 20px;
-  opacity: 0.8;
-  width: auto;
-  padding: 5px;
   position: relative;
-  border-radius: 1em 1em 1em 1em;
+  left: 350px;
+  bottom: 400px;
 }
 
-.myinfo {
-  max-width: 45%;
-  text-align: left;
-  font-family: "Rockwell", serif;
-  color: #59191d;
-  font-size: 13px;
-  padding: 5px;
-  display: block;
+#panel {
+  color: #f9fae8;
+  background-color: #69a167;
+  padding: 10px;
+  width: 250px;
+  height: 42px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-div#links {
-  background-color: #9e9194;
-  background: linear-gradient(white, #9e9194);
-  float: left;
-  top: 1488px;
-  max-width: 100%
-  height: auto;
+#panel span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+#panel span:after {
+  content: ' \25FF';
   position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#panel:hover span {
+  padding-right: 25px;
+}
+
+#panel:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#dropdown-content {
+  color: #47543d;
+  padding: 10px;
+  background-color: #e6ffd4;
+  width: 50%;
   display: block;
-  border-top: 1px groove #c24a56;
-  border-bottom: 5px groove #c24a56;
-}
-
-div#links h3 {
-  max-width: 100%;
-  height: auto;
   position: relative;
-  margin-left: 10px;
+  border-radius: 8px;
 }
 
-div#links li {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  list-style: none;
-
+.wsheader {
+  font-family: "Helvetica", sans-serif;
+  color: green;
+  font-size: 22px;
 }
 
-div#links a {
-  color: black;
-  text-decoration: none;
-}
-
-.fa-amazon {
-  margin-top: 10px;
-  margin-right: 4px;
-  position: relative;
-  float: right;
-  bottom: 65px;
+.wsaheader {
+  font-family: "Helvetica", sans-serif;
+  color: green;
+  font-size: 22px;
 }
 
 .writingsamples {
-  border-bottom: 5px ridge red;
-  border-bottom-left-radius: 2em;
-  top: 1250px;
-  display: block;
-  position: absolute;
-  float: left;
+  border: 1px solid #888888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  position: relative;
   max-width: 100%;
-  height: auto;
+  opacity: 0.8;
+  transition: 0.2s;
 }
 
-.writingsamples img {
-  border-bottom: 3px ridge #59191d;
-  border-bottom-left-radius: 2em;
+.writingsamples:hover {
+  opacity: 1;
+  border: 2px groove lightgrey;
 }
 
-/*CONTACT FORM*/
-div.container {
-  display: block;
-  position: absolute;
-  float: left;
-  max-width: 50%;
-  height: auto;
-  top: 1888px;
-  padding: 5px;
-}
-
-fieldset {
+.writings-amazon {
+  border: 1px solid #888888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  position: relative;
   max-width: 100%;
-  height: auto;
-  margin: auto;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.writings-amazon:hover {
+  opacity: 1;
+  border: 2px groove lightgrey;
+}
+
+div.gallery {
   padding: 10px;
-
+  margin: 20px;
 }
 
-div#name-field  {
-  padding: 5px;
-  opacity: 0.7;
+div.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 5px 10px #888888;
 }
 
-div#name-field:hover {
-  opacity: 0.9;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-div#email-field {
-  padding: 5px;
-  opacity: 0.7;
+div.desc {
+  padding: 15px;
+  text-align: left;
 }
 
-div#email-field:hover {
-  opacity: 0.9;
+.responsive {
+  display: inline-grid;
+  padding: 10px;
+  float: left;
+  width: 24.99999%;
 }
 
-div#subject-field {
-  padding: 5px;
-  opacity: 0.7;
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
-div#subject-field:hover {
-  opacity: 0.9;
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
 
-div#message-field {
-  opacity: 0.7;
-  margin-top: -15px;
+div.gall-amazon {
+  padding: 10px;
+  margin: 20px;
 }
 
-div#message-field:hover {
-  opacity: 0.9;
+div.gall-amazon:hover {
+  border: 1px solid #777;
+  box-shadow: 5px 10px #888888;
 }
 
-div>form:hover {
-  opacity: 0.9;
+div.gall-amazon img {
+  width: 100%;
+  height: auto;
 }
 
+div.description-amazon {
+  padding: 15px;
+  text-align: left;
+}
+
+.resp-amazon {
+  display: inline-grid;
+  padding: 10px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .resp-amazon {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .resp-amazon {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 25px;
+  border-radius: 8px;
+  background-color: #a5c9af;
+  padding: 10px;
+}
+
+.col-75 {
+  float: left;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+  .col-75, input[type=submit], textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
 .copyright {
-  top: 1888px;
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  font-size: 85%;
   text-align: center;
-}
-
-.copyright:hover {
-  cursor: default;
+  padding: 10px;
+  position: relative;
+  top: 1200px;
 }
 
 .icon {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  top: 1893px;
-  color: lightblue;
+  font-size: 70%;
   text-decoration: none;
   text-align: center;
-  font-size: 65%;
-  font-weight: bold;
+  padding: 10px;
+  position: relative;
+  top: 1220px;
 }
