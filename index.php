@@ -13,31 +13,25 @@
     <meta name="robots" content="nofollow">
     <meta http-equiv="author" content="Cody Lemons">
     <meta http-equiv="pragma" content="no-cache">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Cody Lemons - Writer/Web Developer</title>
-
     <link href="indexstyles.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <div class="pagetop">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <h1>Cody Lemons</h1>
+  <div class="pagetop">
+    <h1 id="my-name">Cody Lemons</h1>
     <h4 class="diff-font">Writer &amp; Web Developer</h4>
-    <h5 class="email-font">Clemons9988@gmail.com</h5> <hr>
-    <!--<aside class="sidebar-list">
-      <ul>
-        <p id="lang-head">Languages I currently study:</p>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  HTML5</li>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  CSS</li>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  JavaScript</li>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  jQuery</li>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  Java</li>
-        <li><img src="https://img.icons8.com/material-two-tone/12/000000/leaf.png"/>  PHP</li>
-      </ul>
-    </aside>-->
+    <h5 class="email-font">Clemons9988@gmail.com</h5>
+    <div id="time">
+      <span id="local-time-message"><u>My Local Time:</u></span>
+      <span id="local-time">Here's My Local Time</span>
+    </div>
   </div>
 
   </head>
   <body>
-    <ul>
+    <ul id="social-links">
       <li id="social"><a href="http://www.twitter.com/cody_lemons" target="_blank" class="btn btn-block btn-social btn-twitter">
       <span class="fa fa-twitter"></span><p></p>
       </a></li>
@@ -47,13 +41,11 @@
       <li id="social"><a href="http://www.codylemons.com" target="_blank" class="btn btn-block btn-social btn-book">
       <span class="fa fa-book"></span><p></p>
       </a></li>
-    </ul> <hr>
-  <div id="about">
-    <img src="images/sunshine-cody.jpeg" height="420" width="310"/>
-    <div id="panel"><span>About Me</span></div>
-    <div id="dropdown-content"><span>I graduated from the <em>University of Mississippi</em> in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <em>Bloc.io</em>. Now, I spend my time building websites and experimenting with code. If you're a writer or programmer like me, I'd love to hear from you. So please send me a message or find me on Twitter and Github.</span>
-    </div><hr>
-  </div>
+    </ul> 
+    <!--<img src="images/sunshine-cody.jpeg" alt="Cody Lemons and his wife Sunshine taking a selfie and smiling" height="420" width="310"/>-->
+    <button id="panel">About Me</button>
+      <div id="content"><span><span id="content-message"></span><br><br>I graduated from the <em>University of Mississippi</em> in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <em>Bloc.io</em>. Now, I spend my time building websites and experimenting with code. If you're a writer or programmer like me, I'd love to hear from you. So please send me a message or find me on Twitter and Github.</span>
+    </div>
   <br>
   <br>
   <br>
@@ -62,7 +54,7 @@
       <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/article1.jpg">
-      <img src="images/article1.jpg" alt="writing sample" width="600" height="400">
+      <img src="images/article1.jpg" alt="first published article from 2009" width="600" height="400">
     </a>
     <div class="desc">First published article (2009) - <em>The Daily Mississippian</em></div>
   </div>
@@ -70,7 +62,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/article2.jpg">
-      <img src="images/article2.jpg" alt="writing sample" width="600" height="400">
+      <img src="images/article2.jpg" alt="second published article from 2012" width="600" height="400">
     </a>
     <div class="desc">Second published article (2012) - <em>DeSoto Times-Tribune</em></div>
   </div>
@@ -78,7 +70,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/article3.jpg">
-      <img src="images/article3.jpg" alt="writing sample" width="600" height="400">
+      <img src="images/article3.jpg" alt="third published article from 2012" width="600" height="400">
     </a>
     <div class="desc">Third published article (2012) - <em>DeSoto Times-Tribune</em></div>
   </div>
@@ -89,75 +81,51 @@
     <div class="writings-amazon">
     <div class="resp-amazon">
       <div class="gall-amazon">
-        <a target="_blank" href="images/mental.jpg">
-          <img src="images/mental.jpg" alt="The Leak by Cody Lemons" width="600" height="400">
+        <a target="_blank" href="https://t.co/qei2bCAAF4?amp=1">
+          <img src="images/mental.jpg" alt="outline of a head facing to the right with jumbled lines inside the head to show confusion" width="600" height="400">
         </a>
         <div class="description-amazon">"The Leak" - <em>Available on Amazon!</em></div>
+        <!--<span id="info-icon" class="iconify" data-icon="bi:info-circle" data-inline="false"></span>-->
       </div>
     </div>
     <div class="resp-amazon">
       <div class="gall-amazon">
-        <a target="_blank" href="images/prison.jpg">
-          <img src="images/prison.jpg" alt="Encore! by Cody Lemons" width="600" height="400">
+        <a target="_blank" href="https://t.co/QNyYSGXPno?amp=1">
+          <img src="images/prison.jpg" alt="image of a prisoner's silhouette walking down a dark prison corridor alone" width="600" height="400">
         </a>
         <div class="description-amazon">"Encore! A Prison Population Story" - <em>Available on Amazon!</em></div>
+        <!--<span id="info-icon" class="iconify" data-icon="bi:info-circle" data-inline="false"></span>-->
       </div>
     </div>
     <div class="clearfix"></div>
     </div>
-
-  <!--  <div class="container">
-  <form action="contactform.php" method="post">
-    <div class="row">
-      <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name...">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-        <input type="email" id="email" name="email" placeholder="Your email...">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-        <input id="subject" name="subject" placeholder="Subject...">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-        <textarea id="message" name="message" rows="8" cols="80" placeholder="Your message..." style="height:120px" "width:200px"></textarea>
-      </div>
-    </div>
-
-    <div class="row">
-      <button id="submitbtn" type="submit" name="submit">Send</button>
-      <button id="resetbtn" type="reset" name="reset">Clear</button>
-    </div>
-  </form>
-</div>-->
     <div class="container">
       <form id="email-form" class="contact-form" action="contactform.php" method="POST">
       <fieldset>
         <legend>Send me a message:</legend>
-    <div id="name-field">
-      <input type="text" name="name" placeholder="Full name">
+    <div id="name-field" class="form-group">
+      <input class="form-control" type="text" name="name" placeholder="Full name">
+      <span class="error">* <?php echo $nameErr;?></span>
       <br>
     </div>
-    <div id="email-field">
-      <input type="text" name="mail" placeholder="Your email">
+    <div id="email-field" class="form-group">
+      <input class="form-control" type="text" name="mail" placeholder="Your email">
+      <span class="error">* <?php echo $emailErr;?></span>
       <br>
     </div>
-    <div id="subject-field">
-      <input type="text" name="subject" placeholder="Subject">
+    <div id="subject-field" class="form-group">
+      <input class="form-control" type="text" name="subject" placeholder="Subject">
+      <span class="error">* <?php echo $subjectErr;?></span>
       <br>
     </div>
-    <div>
+    <div class="form-group">
     <br>
-      <textarea id="message-field" name="message" placeholder="Message"></textarea>
+      <textarea class="form-control" id="message-field" name="message" placeholder="Message"></textarea>
+      <span class="error">* <?php echo $messageErr;?></span>
       <br>
     </div>
-      <button type="submit" name="submit">Send</button>
-      <button type="reset" name="reset">Clear</button>
+      <button id="btn1" type="submit" name="submit">Send</button>
+      <button id="btn2" type="reset" name="reset">Clear</button>
       <?php
         function function_alert($successmsg) {
           if ( isset($_GET['success']) && $_GET['success']==true )
@@ -170,8 +138,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
   </body>
-      <p class="copyright">Cody Lemons &copy; 2020</p>
-      <a href="https://icons8.com/icon/101943/leaf" class="icon"><p>Like the icons? Click here!</p></a>
-</html>
+      <p class="copyright">Cody Lemons &copy; 2021</p>

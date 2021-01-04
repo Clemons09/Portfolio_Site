@@ -4,16 +4,23 @@
 
 html {
   margin: auto;
-  background-color: #f7f7e9;
+  background-color: #f4fff4;
 }
 
-.pagetop {
-
-}
-
-.pagetop h1 {
-    font-size: 42px;
+.pagetop h1, h4, h5 {
+    color: rgb(59, 59, 59);
     font-family: "Helvetica", "Courier", sans-serif;
+  
+}
+
+#my-name {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  #my-name {
+    width: 100px;
+  }
 }
 
 .diff-font {
@@ -25,21 +32,59 @@ html {
   padding: 2px;
 }
 
-#social {
-  max-width: 100%;
-  padding: 10px;
+#time {
+  color: rgb(59, 59, 59);
+  border: 1px solid steelblue;
+  border-radius: 8px;
+  width: 140px;
+  height: auto;
+  position: fixed;
+  top: 10px;
+  right: 100px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
+  #time {
+    display: none;
+  }
+}
+
+#time:hover {
+  cursor: default;
+}
+
+#local-time-message {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 464px) {
+  #local-time-message {
+    display: none;
+  }
+}
+
+#local-time {
+  font-family: "Roboto";
+}
+
+#social-links {
   list-style-type: none;
-  display: inline-flex;
+  position: fixed;
+  right: 10px;
+  top: 0;
 }
 
 .fa {
   padding: 10px;
   border: 2px solid green;
   border-radius: 50px;
+  background-color: whitesmoke;
 }
 
 .fa:hover {
-  background-color: #f1faeb;
+  background-color: rgb(187, 212, 184);
   cursor: pointer;
 }
 
@@ -55,34 +100,11 @@ html {
   color: #ba2236;
 }
 
-#about {
-  position: relative;
-}
-
-#about img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  opacity: 0.9;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#panel, #dropdown-content {
-  margin: 12px;
-  background-color: #52b023;
-  border: 1px solid #52b023;
-  text-align: center;
-  display: block;
-  position: relative;
-  left: 350px;
-  bottom: 400px;
-}
-
 #panel {
   color: #f9fae8;
   background-color: #69a167;
   padding: 10px;
-  width: 250px;
+  width: 170px;
   height: 42px;
   border-radius: 8px;
   border: none;
@@ -92,57 +114,63 @@ html {
   font-size: 20px;
   transition: all 0.5s;
   cursor: pointer;
-}
-
-#panel span {
-  cursor: pointer;
   position: relative;
   transition: 0.5s;
 }
 
-#panel span:after {
+#panel:after {
   content: ' \25FF';
-  position: absolute;
+  position: relative;
   opacity: 0;
   top: 0;
-  right: -20px;
   transition: 0.5s;
 }
 
-#panel:hover span {
-  padding-right: 25px;
+#panel:hover {
+  padding-right: 5px;
 }
 
-#panel:hover span:after {
+#panel:hover:after {
   opacity: 1;
   right: 0;
 }
 
-#dropdown-content {
-  color: #47543d;
+#content {
+  color: rgb(59, 59, 59);
   padding: 10px;
-  background-color: #e6ffd4;
-  width: 50%;
-  display: block;
+  background-color: rgb(237, 250, 204);
+  width: 100%;
+  display: none;
   position: relative;
+  border: 0.5px solid rgb(59, 59, 59);
   border-radius: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+  #content {
+    width: 600px;
+  }
+}
+
+#content-message {
+  font-weight: bold;
 }
 
 .wsheader {
   font-family: "Helvetica", sans-serif;
-  color: green;
+  color: rgb(59, 59, 59);
   font-size: 22px;
 }
 
 .wsaheader {
   font-family: "Helvetica", sans-serif;
-  color: green;
+  color: rgb(59, 59, 59);
   font-size: 22px;
 }
 
 .writingsamples {
-  border: 1px solid #888888;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgb(59, 59, 59);
+  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
   border-radius: 10px;
   position: relative;
   max-width: 100%;
@@ -152,12 +180,12 @@ html {
 
 .writingsamples:hover {
   opacity: 1;
-  border: 2px groove lightgrey;
+  border: 2px groove rgb(59, 59, 59);
 }
 
 .writings-amazon {
   border: 1px solid #888888;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
   border-radius: 10px;
   position: relative;
   max-width: 100%;
@@ -167,7 +195,7 @@ html {
 
 .writings-amazon:hover {
   opacity: 1;
-  border: 2px groove lightgrey;
+  border: 2px groove rgb(59, 59, 59);
 }
 
 div.gallery {
@@ -176,8 +204,8 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
-  box-shadow: 5px 10px #888888;
+  border: 1px solid rgb(59, 59, 59);
+  box-shadow: 5px 10px rgb(59, 59, 59);
 }
 
 div.gallery img {
@@ -198,7 +226,7 @@ div.desc {
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  .responsive, {
     width: 49.99999%;
     margin: 6px 0;
   }
@@ -216,8 +244,8 @@ div.gall-amazon {
 }
 
 div.gall-amazon:hover {
-  border: 1px solid #777;
-  box-shadow: 5px 10px #888888;
+  border: 1px solid rgb(59, 59, 59);
+  box-shadow: 5px 10px rgb(59, 59, 59);
 }
 
 div.gall-amazon img {
@@ -250,6 +278,18 @@ div.description-amazon {
   }
 }
 
+.iconify {
+  color: darkblue;
+  position: relative;
+  left: 0;
+}
+
+.iconify:hover {
+  height: 13%;
+  width: 13%;
+  cursor: pointer;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -257,11 +297,63 @@ div.description-amazon {
 }
 
 .container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
   margin-top: 25px;
   border-radius: 8px;
-  background-color: #a5c9af;
+  background-color: rgb(236, 250, 202);
   padding: 10px;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media only screen and (min-width: 300px) {
+  .container {
+    height: 330px;
+    width: 370px;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+legend {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  margin: 20px;
+  text-align: left;
+}
+
+.form-control {
+  font-family: "Roboto", sans-serif;
+  margin: 7px;
+  height: 30px;
+  width: 150px;
+  border-radius: 4px;
+}
+
+button {
+  margin: 5px auto 5px 10px;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .col-75 {
@@ -277,23 +369,20 @@ div.description-amazon {
 
 @media only screen and (max-width: 600px) {
   .col-75, input[type=submit], textarea {
-    width: 100%;
     margin-top: 0;
   }
 }
 
+.error {
+  color: red;
+}
+
 .copyright {
+  color: steelblue;
+  opacity: 0.8;
+  font-weight: bold;
   text-align: center;
   padding: 10px;
   position: relative;
   top: 1200px;
-}
-
-.icon {
-  font-size: 70%;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  top: 1220px;
 }
