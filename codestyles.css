@@ -76,8 +76,9 @@
   text-align: right;
   padding: 15px;
   background-color: #222;
-  border-top: 1px solid #D4E6BE;
-  border-bottom: 1px solid #D4E6BE;
+  border-top: 1px solid #B9D6BA;
+  border-bottom: 1px solid #B9D6BA;
+  border-radius: 5px;
 }
 
 .list-item:hover {
@@ -121,15 +122,17 @@
 .projects {
   display: flex;
   flex-direction: row;
+  grid-column-gap: 10px;
 
 }
 
 @media screen and (max-width: 700px) {
   .projects {
     flex-direction: column;
+    grid-row-gap: 10px;
   }
   p.source-link {
-    margin-left: 15px;
+    margin-left: 25px;
   }
 }
 

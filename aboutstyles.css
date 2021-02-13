@@ -82,8 +82,9 @@ html {
   text-align: right;
   padding: 15px;
   background-color: #222;
-  border-top: 1px solid #D4E6BE;
-  border-bottom: 1px solid #D4E6BE;
+  border-top: 1px solid #B9D6BA;
+  border-bottom: 1px solid #B9D6BA;
+  border-radius: 5px;
 }
 
 .list-item:hover {
