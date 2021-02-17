@@ -120,29 +120,47 @@
 }
 
 .projects {
+  
   display: flex;
   flex-direction: row;
+  top: 0;
+  position: relative;
+  margin: 30px;
   grid-column-gap: 10px;
 
 }
 
+@media screen and (min-width: 700px) {
+  .projects {
+  
+    display: grid;
+    width: 50%;
+    position: absolute;
+   
+    
+    grid-row-gap: 10px;
+  
+  }
+}
+
 @media screen and (max-width: 700px) {
   .projects {
+    padding: 40px;
     flex-direction: column;
     grid-row-gap: 10px;
   }
   p.source-link {
-    margin-left: 25px;
+    left: 20%;
   }
 }
 
 .projectone {
+  background-color: lightblue;
   position: relative;
   top: 100px;
   left: 25vw;
   right: 25vw;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -152,12 +170,12 @@
 }
 
 .projecttwo {
+  background-color: rgb(218, 201, 201);
   position: relative;
   top: 100px;
   left: 25vw;
   right: 25vw;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -167,12 +185,12 @@
 }
 
 .projectthree {
+  background-color: rgb(186, 228, 186);
   position: relative;
   top: 100px;
   left: 25vw;
   right: 25vw;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -182,7 +200,7 @@
 }
 
 .title {
-  font-size: 12px;
+  font-size: 22px;
   margin: 15px;
 }
 
@@ -210,7 +228,9 @@
 .source-link {
   text-align: left;
   padding: 0.75rem;
-  width: 100px;
+  width: 35%;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 
