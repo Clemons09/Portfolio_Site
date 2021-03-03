@@ -9,9 +9,7 @@
 }
 
 .container {
-  position: relative;
   background-color: #222;
-  z-index: 10;
 }
 
 .icon {
@@ -115,88 +113,61 @@
   color: whitesmoke;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  top: 70px;
-  margin: 20px;
+#contact-form {
   position: relative;
-}
-
-.projectone {
-  border: 1px solid black;
-  box-shadow: 3px 3px grey;
-  background-color: white;
-  background-image: url("images/project1.png");
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 60px;
-  left: 10px;
-  height: 200px;
-  position: relative;
+  top: 100px;
+  border: 1px solid rgb(163, 161, 161);
   border-radius: 5px;
-  margin: 60px;
+  background-color: #f2f2f2;
+  width: 500px;
+  margin: 30px;
+  padding: 20px;
+  left: 20%;
 }
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: white 0px 0px 10px;
-  position: relative;
-  text-align: center;
-  bottom: 70px;
-  margin: 10px;
-}
-@media screen and (max-width: 600px) {
-  .title {
-    bottom: 70px;
-    font-size: 20px;
+@media screen and (max-width: 670px) {
+  #contact-form {
+    width: 75%;
+    left: 5%;
   }
 }
 
-.projecttwo {
-  border: 1px solid black;
-  box-shadow: 3px 3px grey;
-  background-color: white;
-  background-image: url("images/project2.png");
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 60px;
-  left: 10px;
-  height: 200px;
-  position: relative;
-  border-radius: 5px;
-  margin: 60px;
-}
-
-.projectthree {
-  border: 1px solid black;
-  box-shadow: 3px 3px grey;
-  background-color: white;
-  background-image: url("images/project3.png");
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 60px;
-  left: 10px;
-  height: 200px;
-  position: relative;
-  border-radius: 5px;
-  margin: 60px;
-}
-
-.source-link {
-  text-align: center;
-  padding: 10px;
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
-  position: relative;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.source-link:hover {
+label {
+  padding: 12px;
+  display: inline-block;
+}
+
+.submitBtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 8px;
+  position: relative;
+  left: 25%;
+}
+
+.clearBtn {
+  background-color: #b6121a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  left: 25%;
 }
 
 .copyright {

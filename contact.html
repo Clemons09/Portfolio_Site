@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="aboutstyles.css">
   <title>Portfolio</title>
+  <script type="text/javascript" src="contact.js"></script>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+(function() {
+emailjs.init("user_FWex5DO8AX5fQ1BvVpuOX");
+})();
+</script>
+<link rel="stylesheet" href="contactstyles.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="code.html">Code Samples</a></li>
         <li><a href="samples.html">Writing Samples</a></li>
@@ -45,18 +53,22 @@
   </div>
   </div>
 </div>
-  <div class="aboutcontainer container-fluid">
-    <div class="aboutimg img-responsive">
-    <img class="aboutimage" src="images/sunshine-cody.jpg" alt="My wife and I posing for a picture">
-    </div>
-    <div class="abouttext">
-    <p>I graduated from the <em>University of Mississippi</em> in 2012 with a B.A. in Journalism. In 2017, I went on to study Web Development through <em>Bloc.io</em>. Now, I spend my time building websites and experimenting with code. If you're a writer or programmer like me, I'd love to hear from you. So please find me on Twitter and Github.</p>
-    </div>
-  </div>
-  
- 
-  </div>
-  <script type="text/javascript" src="app.js"></script>
+
+  <form id="contact-form">
+    <input type="hidden" name="contact_number">
+    <label>Name</label><br>
+    <input class="name" id="toName" type="text" name="user_name"><br><br>
+    <label>Email</label><br>
+    <input class="email" id="fromName" type="email" name="user_email"><br><br>
+    <label>Message</label><br>
+    <textarea class="message" id="msg" name="message"></textarea><br><br>
+    <input class="submitBtn" onclick="sendMail()" type="submit" value="Send">
+    <input class="clearBtn" type="reset" value="Clear">
+</form>
+<script type="text/javascript" src="contact.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<div><p class="copyright">Cody Lemons&copy; 2021</p></div>
+
 </body>
-<p class="copyright">Cody Lemons &copy; 2021</p>
 </html>

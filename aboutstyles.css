@@ -17,7 +17,6 @@ html {
 
 .container {
   background-color: #222;
-  
 }
 
 .icon {
@@ -41,7 +40,6 @@ html {
   top: 15px;
   right: 15px;
   z-index: 2;
-  
 }
 
 .fa-bars:hover {
@@ -57,48 +55,45 @@ html {
   top: 15px;
   right: 15px;
   z-index: 2;
-  
 }
 
 .fa-times:hover {
   cursor: pointer;
+  color: rgb(253, 68, 68);
 }
 
 .dropdown-content {
   position: relative;
   background-color: #222;
-  float: right;
-  width: 70vw;
-  height: 60vh;
+  width: 100%;
+  height: 60%;
   border-radius: 5px;
   padding: 50px;
   margin: 20px;
   margin-top: 45px;
   z-index: 1;
-  
 }
 
 .list-item {
   text-align: right;
   padding: 15px;
   background-color: #222;
-  border-top: 1px solid #B9D6BA;
-  border-bottom: 1px solid #B9D6BA;
+  border-top: 1px solid #b9d6ba;
+  border-bottom: 1px solid #b9d6ba;
   border-radius: 5px;
 }
 
 .list-item:hover {
-  background-color: #5AB4D5;
+  background-color: #5ab4d5;
   font-weight: bold;
   border-radius: 5px;
-
 }
 
 .clickable {
   position: relative;
   font-size: 18px;
   text-decoration: none;
-    color: white;
+  color: white;
 }
 
 .dropdown-social {
@@ -118,7 +113,7 @@ html {
 }
 
 .fa-twitter-square {
-  color: #009DED;
+  color: #009ded;
 }
 
 .fa-github-square {
@@ -127,7 +122,6 @@ html {
 
 .aboutcontainer {
   background-color: lightcoral;
-
 }
 
 .aboutcontainer {
@@ -151,22 +145,22 @@ img {
 }
 .abouttext {
   background-color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 14px;
   width: 100%;
   padding: 40px;
-
 }
 
 .abouttext::first-letter {
   font-size: 32px;
-  color:#222;
+  color: #222;
 }
 .copyright {
   color: steelblue;
-  font-family: 'Courier New', Courier, monospace;
-  opacity: 0.6;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.8;
   text-align: center;
   position: relative;
   top: 2500px;
+  padding-bottom: 20px;
 }

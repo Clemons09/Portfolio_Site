@@ -37,7 +37,6 @@
   top: 15px;
   right: 15px;
   z-index: 2;
-  
 }
 
 .fa-bars:hover {
@@ -53,48 +52,45 @@
   top: 15px;
   right: 15px;
   z-index: 2;
-  
 }
 
 .fa-times:hover {
   cursor: pointer;
+  color: rgb(253, 68, 68);
 }
 
 .dropdown-content {
   position: relative;
   background-color: #222;
-  float: right;
-  width: 70vw;
-  height: 60vh;
+  width: 100%;
+  height: 60%;
   border-radius: 5px;
   padding: 50px;
   margin: 20px;
   margin-top: 45px;
   z-index: 1;
-  
 }
 
 .list-item {
   text-align: right;
   padding: 15px;
   background-color: #222;
-  border-top: 1px solid #B9D6BA;
-  border-bottom: 1px solid #B9D6BA;
+  border-top: 1px solid #b9d6ba;
+  border-bottom: 1px solid #b9d6ba;
   border-radius: 5px;
 }
 
 .list-item:hover {
-  background-color: #5AB4D5;
+  background-color: #5ab4d5;
   font-weight: bold;
   border-radius: 5px;
-
 }
 
 .clickable {
   position: relative;
   font-size: 18px;
   text-decoration: none;
-    color: white;
+  color: white;
 }
 
 .dropdown-social {
@@ -114,7 +110,7 @@
 }
 
 .fa-twitter-square {
-  color: #009DED;
+  color: #009ded;
 }
 
 .fa-github-square {
@@ -125,8 +121,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  margin: 10px;
-
+  margin: 30px 10px 0 10px;
 }
 
 @media screen and (max-width: 650px) {
@@ -145,11 +140,10 @@
     flex-direction: column;
     left: 10%;
     width: 100%;
-    
   }
 }
 
-.column img{
+.column img {
   height: 200px;
   width: 200px;
 }
@@ -160,7 +154,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   margin: 10px;
-  
 }
 
 @media screen and (max-width: 650px) {
@@ -176,15 +169,18 @@
   }
 }
 
-.proheader, .shortheader {
+.proheader,
+.shortheader {
+  position: relative;
   background: whitesmoke;
   text-align: center;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-decoration: underline;
   font-size: 28px;
   padding-top: 50px;
   padding-bottom: 30px;
   margin-bottom: 50px;
+  margin-top: 50px;
   border-bottom: 2px solid #333;
 }
 
@@ -193,6 +189,10 @@
   padding: 0.5rem 0.75rem;
   width: 40%;
   margin-bottom: 30px;
+}
+
+h3 {
+  letter-spacing: 0.1rem;
 }
 
 .storytitletwo {
@@ -219,9 +219,10 @@ p.enlarge {
 
 .copyright {
   color: steelblue;
-  font-family: 'Courier New', Courier, monospace;
-  opacity: 0.6;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.8;
   text-align: center;
   position: relative;
   top: 2500px;
+  padding-bottom: 20px;
 }

@@ -10,6 +10,7 @@ $(document).ready(function() {
     $(".headline").hide();
     $(".fa-times").show();
   });
+  
   $(".fa-times").click(function() {
     $("#fixings1").toggle("slow");
     $(".fa-times").hide();
